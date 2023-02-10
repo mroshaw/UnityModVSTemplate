@@ -1,8 +1,3 @@
----
-title: Unity Mod Templates
-description: A collection of Project and Item templates to speed up the process of creating Unity game mods using the BepInEx patcher and plugin framework.
----
-
 # Unity Mod Templates
 
 A collection of Project and Item templates to speed up the process of creating Unity game mods using the BepInEx patcher and plugin framework.
@@ -15,39 +10,39 @@ The template pack comes with the following:
 
 The project template contains a suggested folder structure, references and starter classes for a new BepInEx based Unity mod.
 
-![](.\media\newprojectemplate.png)
+![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/newprojectemplate.png?raw=true)
 
-![](.\media\projecttemplate.png)
+![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/projecttemplate.png?raw=true)
 
 ### Item Templates
 
 Four item templates are included that provide boiler plate code for a number of core mod class types.
 
-![](G:\My Drive\Documents\Daft Apple Games\Subnautica Mods\Visual Studio Mod Templates\media\newitemtemplates.png)
+![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/newitemtemplates.png?raw=true)
 
 #### BepInEx Plugin Class Item Template
 
 This contains a suggested structure for a "plugin" class for use with the BepInEx framework.
 
-![](.\media\pluginclasstemplate.png)
+![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/pluginclasstemplate.png?raw=true)
 
 #### MonoBehaviour Class Item Template
 
 This contains a suggested structure for a "monobehaviour" class, for introducing new components and behaviours.
 
-![](.\media\monobehaviourclasstemplate.png)
+![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/monobehaviourclasstemplate.png?raw=true)
 
 #### Static Utils Class Item Template
 
 This contains a suggested structure for a static "utils" class, for creating static helper methods.
 
-![](.\media\utilsclasstemplate.png)
+![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/utilsclasstemplate.png?raw=true)
 
 #### Harmony Patch Class Item Template 
 
 This contains a suggested structure for a "patch" class, for building Harmony patch classes and methods.
 
-![](.\media\patchclasstemplate.png)
+![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/patchclasstemplate.png?raw=true)
 
 ## Installation
 
@@ -55,7 +50,7 @@ The template pack comes as a single ZIP file. Unzip this file to a location on y
 
 1. You should have a folder structure as follows:
 
-   ![](.\media\templatefolderstructure.png)
+   ![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/templatefolderstructure.png?raw=true)
 
 2. In Windows Explorer, navigate to this location:
 
@@ -73,7 +68,7 @@ If you download and apply an update to the templates, you may have to run this p
 
 1. From the Start menu, open Visual Studio 2022, right click Developer Command Prompt for VS2022 and select More > Run as administrator:
 
-   ![](.\media\runcommandprompt.png)
+   ![](https://github.com/mroshaw/UnityModVSTemplate/blob/main/media/runcommandprompt.png?raw=true)
 
 2. Enter and execute the following command:
 

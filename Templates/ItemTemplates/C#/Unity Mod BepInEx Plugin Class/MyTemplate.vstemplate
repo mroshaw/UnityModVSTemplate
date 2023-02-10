@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>PluginClass.cs</DefaultName>
+    <Name>Unity Mod BepInEx Plugin Class</Name>
+    <Description>A Unity mod template for new BepInEx Plugin classes.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>Assembly-CSharp_publicized</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Assembly-CSharp-firstpass_publicized</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>BepInEx</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>0Harmony</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">PluginClass1.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

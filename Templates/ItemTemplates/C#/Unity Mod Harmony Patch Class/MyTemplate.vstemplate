@@ -1,0 +1,33 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>PatchClass.cs</DefaultName>
+    <Name>Unity Mod Harmony Patch Class</Name>
+    <Description>A Unity mod template for new Harmony Patch classes.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>Assembly-CSharp_publicized</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Assembly-CSharp-firstpass_publicized</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>BepInEx</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>0Harmony</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEngine.CoreModule</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEngine</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">PatchClass1.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

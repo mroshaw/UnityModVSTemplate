@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>UtilsClass.cs</DefaultName>
+    <Name>Unity Mod Utils Class</Name>
+    <Description>A Unity mod template for new Utils classes.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>Assembly-CSharp_publicized</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Assembly-CSharp-firstpass_publicized</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEngine.CoreModule</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>UnityEngine</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem SubType="" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">UtilsClass1.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

@@ -9,7 +9,7 @@ namespace $safeprojectname$
     // TODO Review this file and update to your own requirements.
 
     [BepInPlugin(MyGUID, PluginName, VersionString)]
-    public class PluginClass1 : BaseUnityPlugin
+    public class $safeprojectname$Plugin : BaseUnityPlugin
     {
         // Mod specific details. MyGUID should be unique, and follow the reverse domain pattern
         // e.g.
@@ -17,8 +17,8 @@ namespace $safeprojectname$
         // Version should be a valid version string.
         // e.g.
         // 1.0.0
-        private const string MyGUID = "MYGUID";
-        private const string PluginName = "PLUGINNAME";
+        private const string MyGUID = "com.$username$.$safeprojectname$";
+        private const string PluginName = "$safeprojectname$";
         private const string VersionString = "1.0.0";
 
         // Config entry key strings
@@ -30,7 +30,7 @@ namespace $safeprojectname$
 
         // Configuration entries. Static, so can be accessed directly elsewhere in code via
         // e.g.
-        // float myFloat = PLUGINCLASS.FloatExample.Value;
+        // float myFloat = $safeprojectname$Plugin.FloatExample.Value;
         // TODO Change this code or remove the code if not required.
         public static ConfigEntry<float> FloatExample;
         public static ConfigEntry<int> IntExample;
@@ -73,13 +73,28 @@ namespace $safeprojectname$
             KeyboardShortcutExample.SettingChanged += ConfigSettingChanged;
 
             // Apply all of our patches
+            Logger.LogInfo($"PluginName: {PluginName}, VersionString: {VersionString} is loading...");
             Harmony.PatchAll();
             Logger.LogInfo($"PluginName: {PluginName}, VersionString: {VersionString} is loaded.");
 
             // Sets up our static Log, so it can be used elsewhere in code.
             // .e.g.
-            // PLUGINCLASS.Log.LogDebug("Debug Message to BepInEx log file");
+            // $safeprojectname$Plugin.Log.LogDebug("Debug Message to BepInEx log file");
             Log = Logger;
+        }
+
+        /// <summary>
+        /// Code executed every frame. See below for an example use case
+        /// to detect keypress via custom configuration.
+        /// </summary>
+        // TODO - Add your code here or remove this section if not required.
+        private void Update()
+        {
+            if ($safeprojectname$Plugin.KeyboardShortcutExample.Value.IsDown())
+	    {
+	        // Code here to do something on keypress
+                Logger.LogInfo("Keypress detected!");
+            }
         }
 
         /// <summary>

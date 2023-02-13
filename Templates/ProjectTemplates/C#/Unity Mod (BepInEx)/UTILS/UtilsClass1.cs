@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-namespace $safeprojectname$
+namespace $safeprojectname$.Utils
 {
     /// <summary>
     /// Static utilities class for common functions and properties to be used within your mod code
     /// </summary>
-    internal static class UtilsClass1
+    internal static class ModUtils
     {
         /// <summary>
         /// Example static method to return Players current location / transform

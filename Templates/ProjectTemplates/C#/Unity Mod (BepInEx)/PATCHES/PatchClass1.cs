@@ -1,6 +1,6 @@
 ﻿using HarmonyLib;
 
-namespace $safeprojectname$
+namespace $safeprojectname$.Patches
 {
     // TODO Review this file and update to your own requirements, or remove it altogether if not required
 
@@ -11,7 +11,7 @@ namespace $safeprojectname$
     /// for your mod.
     /// </summary>
     [HarmonyPatch(typeof(Player))]
-    internal class PatchClass1
+    internal class PlayerPatches
     {
         /// <summary>
         /// Patches the Player Awake method with prefix code.
@@ -21,7 +21,7 @@ namespace $safeprojectname$
         [HarmonyPrefix]
         public static bool Awake_Prefix(Player __instance)
         {
-            PluginClass1.Log.LogDebug("In Player Awake method Prefix.");
+            $safeprojectname$Plugin.Log.LogInfo("In Player Awake method Prefix.");
             return true;
         }
 
@@ -33,7 +33,7 @@ namespace $safeprojectname$
         [HarmonyPostfix]
         public static void Awake_Postfix(Player __instance)
         {
-            PluginClass1.Log.LogDebug("In Player Awake method Postfix.");
+            $safeprojectname$Plugin.Log.LogInfo("In Player Awake method Postfix.");
         }
     }
 }

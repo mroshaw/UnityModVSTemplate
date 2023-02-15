@@ -2,6 +2,8 @@
 
 A collection of Project and Item templates to speed up the process of creating Unity game mods using the BepInEx patcher and plugin framework.
 
+I have created a [full video guide to downloading, installing, and using the templates](https://youtu.be/KopYonyplXs). You can find that and more mod related videos on my [Daft Apple Games YouTube channe](https://www.youtube.com/channel/UCp_VeVuW3yY7DjRTC9ZH7jQ)l.
+
 ## Overview
 
 The template pack comes with the following:
